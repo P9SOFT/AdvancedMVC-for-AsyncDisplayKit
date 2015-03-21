@@ -11,13 +11,12 @@
 		F4C835921ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835911ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C835981ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C8358C1ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.framework */; };
 		F4C8359F1ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C8359E1ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKitTests.m */; };
-		F4C835B01ABD1B7100CAE09B /* P9BasicDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835A81ABD1B7100CAE09B /* P9BasicDataSource.h */; };
+		F4C835B01ABD1B7100CAE09B /* P9BasicDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835A81ABD1B7100CAE09B /* P9BasicDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C835B11ABD1B7100CAE09B /* P9BasicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835A91ABD1B7100CAE09B /* P9BasicDataSource.m */; };
 		F4C835B21ABD1B7100CAE09B /* P9DataSource_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835AA1ABD1B7100CAE09B /* P9DataSource_Private.h */; };
-		F4C835B31ABD1B7100CAE09B /* P9DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835AB1ABD1B7100CAE09B /* P9DataSource.h */; };
+		F4C835B31ABD1B7100CAE09B /* P9DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835AB1ABD1B7100CAE09B /* P9DataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C835B41ABD1B7100CAE09B /* P9DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835AC1ABD1B7100CAE09B /* P9DataSource.m */; };
-		F4C835B51ABD1B7100CAE09B /* P9DataSourcesForAsyncDisplayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835AD1ABD1B7100CAE09B /* P9DataSourcesForAsyncDisplayKit.h */; };
-		F4C835B61ABD1B7100CAE09B /* P9SegmentedDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */; };
+		F4C835B61ABD1B7100CAE09B /* P9SegmentedDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C835B71ABD1B7100CAE09B /* P9SegmentedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +45,6 @@
 		F4C835AA1ABD1B7100CAE09B /* P9DataSource_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9DataSource_Private.h; sourceTree = "<group>"; };
 		F4C835AB1ABD1B7100CAE09B /* P9DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9DataSource.h; sourceTree = "<group>"; };
 		F4C835AC1ABD1B7100CAE09B /* P9DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9DataSource.m; sourceTree = "<group>"; };
-		F4C835AD1ABD1B7100CAE09B /* P9DataSourcesForAsyncDisplayKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9DataSourcesForAsyncDisplayKit.h; sourceTree = "<group>"; };
 		F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9SegmentedDataSource.h; sourceTree = "<group>"; };
 		F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9SegmentedDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +115,6 @@
 				F4C835AA1ABD1B7100CAE09B /* P9DataSource_Private.h */,
 				F4C835AB1ABD1B7100CAE09B /* P9DataSource.h */,
 				F4C835AC1ABD1B7100CAE09B /* P9DataSource.m */,
-				F4C835AD1ABD1B7100CAE09B /* P9DataSourcesForAsyncDisplayKit.h */,
 				F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */,
 				F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */,
 				F4C8358F1ABD1B4900CAE09B /* Supporting Files */,
@@ -158,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C835B31ABD1B7100CAE09B /* P9DataSource.h in Headers */,
-				F4C835B51ABD1B7100CAE09B /* P9DataSourcesForAsyncDisplayKit.h in Headers */,
 				F4C835B21ABD1B7100CAE09B /* P9DataSource_Private.h in Headers */,
 				F4C835B61ABD1B7100CAE09B /* P9SegmentedDataSource.h in Headers */,
 				F4C835921ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.h in Headers */,

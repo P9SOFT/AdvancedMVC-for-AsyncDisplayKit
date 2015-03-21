@@ -17,3 +17,6 @@ FOUNDATION_EXPORT const unsigned char P9DataSourcesForAsyncDisplayKitVersionStri
 // In this header, you should import all the public headers of your framework using statements like #import <P9DataSourcesForAsyncDisplayKit/PublicHeader.h>
 
 
+#import <P9DataSourcesForAsyncDisplayKit/P9DataSource.h>
+#import <P9DataSourcesForAsyncDisplayKit/P9SegmentedDataSource.h>
+#import <P9DataSourcesForAsyncDisplayKit/P9BasicDataSource.h>
