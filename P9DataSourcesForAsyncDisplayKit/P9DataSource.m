@@ -15,6 +15,11 @@
 
 @implementation P9DataSource
 
+- (NSInteger)numberOfSections
+{
+    return 1;
+}
+
 - (void)notifySectionsRefreshed:(NSIndexSet *)sections
 {
     P9_ASSERT_MAIN_THREAD;
@@ -57,6 +62,11 @@
 
 
 #pragma mark - ASTableViewDataSource methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return self.numberOfSections;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
