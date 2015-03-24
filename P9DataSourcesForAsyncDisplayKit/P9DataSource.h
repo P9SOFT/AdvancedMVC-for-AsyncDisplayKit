@@ -6,16 +6,15 @@
 //  Copyright (c) 2015 P9 SOFT, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
 
-@interface P9DataSource : NSObject
+@interface P9DataSource : NSObject <ASTableViewDataSource>
 
 @property (nonatomic, copy) NSString *title;
 
 
-- (void)notifyDataRefreshed;
+- (void)notifySectionsRefreshed:(NSIndexSet *)sections;
 - (void)notifyDidReloadData;
-
 
 
 #pragma mark - Placeholders

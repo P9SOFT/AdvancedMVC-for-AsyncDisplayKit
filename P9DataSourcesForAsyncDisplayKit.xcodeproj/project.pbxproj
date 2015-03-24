@@ -18,6 +18,8 @@
 		F4C835B41ABD1B7100CAE09B /* P9DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835AC1ABD1B7100CAE09B /* P9DataSource.m */; };
 		F4C835B61ABD1B7100CAE09B /* P9SegmentedDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4C835B71ABD1B7100CAE09B /* P9SegmentedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */; };
+		F4C835BC1ABFB90900CAE09B /* P9ASTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835BA1ABFB90900CAE09B /* P9ASTableViewController.h */; };
+		F4C835BD1ABFB90900CAE09B /* P9ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835BB1ABFB90900CAE09B /* P9ASTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F4C835AC1ABD1B7100CAE09B /* P9DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9DataSource.m; sourceTree = "<group>"; };
 		F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9SegmentedDataSource.h; sourceTree = "<group>"; };
 		F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9SegmentedDataSource.m; sourceTree = "<group>"; };
+		F4C835BA1ABFB90900CAE09B /* P9ASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9ASTableViewController.h; sourceTree = "<group>"; };
+		F4C835BB1ABFB90900CAE09B /* P9ASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9ASTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +113,8 @@
 		F4C8358E1ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit */ = {
 			isa = PBXGroup;
 			children = (
-				F4C835911ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.h */,
-				F4C835A81ABD1B7100CAE09B /* P9BasicDataSource.h */,
-				F4C835A91ABD1B7100CAE09B /* P9BasicDataSource.m */,
-				F4C835AA1ABD1B7100CAE09B /* P9DataSource_Private.h */,
-				F4C835AB1ABD1B7100CAE09B /* P9DataSource.h */,
-				F4C835AC1ABD1B7100CAE09B /* P9DataSource.m */,
-				F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */,
-				F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */,
+				F4C835B91ABFB8A000CAE09B /* ViewController */,
+				F4C835B81ABFB88C00CAE09B /* DataSources */,
 				F4C8358F1ABD1B4900CAE09B /* Supporting Files */,
 			);
 			path = P9DataSourcesForAsyncDisplayKit;
@@ -147,6 +145,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F4C835B81ABFB88C00CAE09B /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				F4C835911ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.h */,
+				F4C835A81ABD1B7100CAE09B /* P9BasicDataSource.h */,
+				F4C835A91ABD1B7100CAE09B /* P9BasicDataSource.m */,
+				F4C835AB1ABD1B7100CAE09B /* P9DataSource.h */,
+				F4C835AC1ABD1B7100CAE09B /* P9DataSource.m */,
+				F4C835AA1ABD1B7100CAE09B /* P9DataSource_Private.h */,
+				F4C835AE1ABD1B7100CAE09B /* P9SegmentedDataSource.h */,
+				F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		F4C835B91ABFB8A000CAE09B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4C835BA1ABFB90900CAE09B /* P9ASTableViewController.h */,
+				F4C835BB1ABFB90900CAE09B /* P9ASTableViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -159,6 +181,7 @@
 				F4C835B61ABD1B7100CAE09B /* P9SegmentedDataSource.h in Headers */,
 				F4C835921ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.h in Headers */,
 				F4C835B01ABD1B7100CAE09B /* P9BasicDataSource.h in Headers */,
+				F4C835BC1ABFB90900CAE09B /* P9ASTableViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +318,7 @@
 			files = (
 				F4C835B71ABD1B7100CAE09B /* P9SegmentedDataSource.m in Sources */,
 				F4C835B11ABD1B7100CAE09B /* P9BasicDataSource.m in Sources */,
+				F4C835BD1ABFB90900CAE09B /* P9ASTableViewController.m in Sources */,
 				F4C835B41ABD1B7100CAE09B /* P9DataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

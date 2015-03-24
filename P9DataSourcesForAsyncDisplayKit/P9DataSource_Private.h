@@ -20,7 +20,10 @@
 
 
 @protocol P9DataSourceDelegate <NSObject>
+
 @optional
+- (void)dataSourceDidReloadData:(P9DataSource *)dataSource;
+- (void)dataSource:(P9DataSource *)dataSource didRefreshSections:(NSIndexSet *)sections;
 
 @end
 

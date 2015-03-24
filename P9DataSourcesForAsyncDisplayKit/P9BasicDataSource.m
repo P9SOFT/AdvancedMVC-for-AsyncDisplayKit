@@ -23,7 +23,15 @@
         return;
     
     _items = [items copy];
-    [self notifyDataRefreshed];
+    [self notifySectionsRefreshed:[NSIndexSet indexSetWithIndex:0]];
+}
+
+
+#pragma mark - ASTableViewDataSource methods
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [_items count];
 }
 
 @end

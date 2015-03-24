@@ -7,8 +7,9 @@
 //
 
 #import "P9SegmentedDataSource.h"
+#import "P9DataSource_Private.h"
 
-@interface P9SegmentedDataSource () //<P9DataSourceDelegate>
+@interface P9SegmentedDataSource () <P9DataSourceDelegate>
 @property (nonatomic, strong) NSMutableArray *mutableDataSources;
 @end
 
@@ -37,5 +38,23 @@
 }
 
 
+
+#pragma mark - P9DataSourceDelegate methods
+
+- (void)dataSource:(P9DataSource *)dataSource didRefreshSections:(NSIndexSet *)sections
+{
+    if (dataSource != _selectedDataSource)
+        return;
+    
+    [self notifySectionsRefreshed:sections];
+}
+
+- (void)dataSourceDidReloadData:(P9DataSource *)dataSource
+{
+    if (dataSource != _selectedDataSource)
+        return;
+    
+    [self notifyDidReloadData];
+}
 
 @end
