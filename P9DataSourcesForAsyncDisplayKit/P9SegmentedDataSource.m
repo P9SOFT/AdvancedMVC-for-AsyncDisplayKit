@@ -14,20 +14,90 @@
 @end
 
 @implementation P9SegmentedDataSource
-//@synthesize mutableDataSources = _dataSources;
+@synthesize mutableDataSources = _dataSources;
 
+
+- (instancetype)init
+{
+    self = [super init];
+    if (!self)
+        return nil;
+    
+    _dataSources = [NSMutableArray array];
+    
+    return self;
+}
+
+- (NSInteger)numberOfSections
+{
+    return _selectedDataSource.numberOfSections;
+}
+
+- (NSArray *)dataSources
+{
+    return [NSArray arrayWithArray:_dataSources];
+}
 
 - (void)addDataSource:(P9DataSource *)dataSource
 {
+    if (![_dataSources count])
+        _selectedDataSource = dataSource;
+    [_dataSources addObject:dataSource];
+    dataSource.delegate = self;
 }
 
 - (void)removeDataSource:(P9DataSource *)dataSource
 {
+    [_dataSources removeObject:dataSource];
+    if (dataSource.delegate == self)
+        dataSource.delegate = nil;
 }
 
 - (void)removeAllDataSources
 {
+    for (P9DataSource *dataSource in _dataSources) {
+        if (dataSource.delegate == self)
+            dataSource.delegate = nil;
+    }
+    
+    _dataSources = [NSMutableArray array];
+    _selectedDataSource = nil;
 }
+
+- (P9DataSource *)dataSourceAtIndex:(NSInteger)dataSourceIndex
+{
+    return _dataSources[dataSourceIndex];
+}
+
+- (NSInteger)selectedDataSourceIndex
+{
+    return [_dataSources indexOfObject:_selectedDataSource];
+}
+
+/*
+- (void)setSelectedDataSourceIndex:(NSInteger)selectedDataSourceIndex
+{
+    [self setSelectedDataSourceIndex:selectedDataSourceIndex animated:NO];
+}
+
+- (void)setSelectedDataSourceIndex:(NSInteger)selectedDataSourceIndex animated:(BOOL)animated
+{
+    P9DataSource *dataSource = [_dataSources objectAtIndex:selectedDataSourceIndex];
+    [self setSelectedDataSource:dataSource animated:animated completionHandler:nil];
+}
+
+- (void)setSelectedDataSource:(AAPLDataSource *)selectedDataSource
+{
+    [self setSelectedDataSource:selectedDataSource animated:NO completionHandler:nil];
+}
+
+- (void)setSelectedDataSource:(AAPLDataSource *)selectedDataSource animated:(BOOL)animated
+{
+    [self setSelectedDataSource:selectedDataSource animated:animated completionHandler:nil];
+}
+ */
+
+
 
 // Override
 - (void)resetContent

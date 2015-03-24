@@ -11,6 +11,8 @@
 @interface P9DataSource : NSObject <ASTableViewDataSource>
 
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) NSInteger numberOfSections;
+
 
 
 - (void)notifySectionsRefreshed:(NSIndexSet *)sections;
