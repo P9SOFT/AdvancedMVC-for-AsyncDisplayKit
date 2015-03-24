@@ -54,6 +54,8 @@ static void * const P9DataSourceContext = @"DataSourceContext";
 {
     ASTableView *oldTableView = self.tableView;
     
+    _tableView = tableView;
+    
     [oldTableView removeObserver:self forKeyPath:@"dataSource" context:P9DataSourceContext];
     
     [oldTableView addObserver:self forKeyPath:@"dataSource" options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew context:P9DataSourceContext];
