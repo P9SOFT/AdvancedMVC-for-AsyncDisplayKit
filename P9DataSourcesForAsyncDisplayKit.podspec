@@ -5,7 +5,6 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'http://p9soft.com'
   spec.authors      = { 'Simon Kim' => 'contact@p9soft.com' }
   spec.summary      = 'DataSource classes for AsyncDisplayKit from Facebook.'
-  # spec.source       = { :git => 'https://github.com/P9SOFT/P9DataSources-for-AsyncDisplayKit.git', :tag => '0.0.2' }
   spec.source       = { :git => 'https://github.com/P9SOFT/P9DataSources-for-AsyncDisplayKit.git' }
 
   spec.documentation_url = 'https://github.com/P9SOFT/P9DataSources-for-AsyncDisplayKit/'
