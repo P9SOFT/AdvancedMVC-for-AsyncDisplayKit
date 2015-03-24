@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 P9 SOFT, Inc. All rights reserved.
 //
 
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import "AsyncDisplayKit.h"
 
 @interface P9DataSource : NSObject <ASTableViewDataSource>
 
