@@ -2,10 +2,10 @@
 //  P9DataSource_Private.h
 //  P9DataSourcesForAsyncDisplayKit
 //
-//  Created by Simon on 3/20/15.
+//  Created by Simon Kim on 3/20/15.
 //  Copyright (c) 2015 P9 SOFT, Inc. All rights reserved.
 //
-
+//  Licensed under the MIT license.
 
 #import "P9DataSource.h"
 
