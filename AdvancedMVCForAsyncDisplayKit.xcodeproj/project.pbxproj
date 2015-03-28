@@ -22,8 +22,8 @@
 		F4DC01D41AC700170013C331 /* P9DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC01CD1AC700170013C331 /* P9DataSource.m */; };
 		F4DC01D51AC700170013C331 /* P9SegmentedDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DC01CE1AC700170013C331 /* P9SegmentedDataSource.h */; };
 		F4DC01D61AC700170013C331 /* P9SegmentedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC01CF1AC700170013C331 /* P9SegmentedDataSource.m */; };
-		F4DC01D91AC700210013C331 /* P9ASTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DC01D71AC700210013C331 /* P9ASTableViewController.h */; };
-		F4DC01DA1AC700210013C331 /* P9ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC01D81AC700210013C331 /* P9ASTableViewController.m */; };
+		F4DC01DD1AC708B60013C331 /* P9ASTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DC01DB1AC708B60013C331 /* P9ASTableViewController.h */; };
+		F4DC01DE1AC708B60013C331 /* P9ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC01DC1AC708B60013C331 /* P9ASTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,8 @@
 		F4DC01CD1AC700170013C331 /* P9DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9DataSource.m; sourceTree = "<group>"; };
 		F4DC01CE1AC700170013C331 /* P9SegmentedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9SegmentedDataSource.h; sourceTree = "<group>"; };
 		F4DC01CF1AC700170013C331 /* P9SegmentedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9SegmentedDataSource.m; sourceTree = "<group>"; };
-		F4DC01D71AC700210013C331 /* P9ASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9ASTableViewController.h; sourceTree = "<group>"; };
-		F4DC01D81AC700210013C331 /* P9ASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9ASTableViewController.m; sourceTree = "<group>"; };
+		F4DC01DB1AC708B60013C331 /* P9ASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9ASTableViewController.h; sourceTree = "<group>"; };
+		F4DC01DC1AC708B60013C331 /* P9ASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9ASTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +172,8 @@
 		F4DC01BE1AC6FFBE0013C331 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4DC01D71AC700210013C331 /* P9ASTableViewController.h */,
-				F4DC01D81AC700210013C331 /* P9ASTableViewController.m */,
+				F4DC01DB1AC708B60013C331 /* P9ASTableViewController.h */,
+				F4DC01DC1AC708B60013C331 /* P9ASTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				F4DC01D31AC700170013C331 /* P9DataSource.h in Headers */,
 				F4DC01D21AC700170013C331 /* P9DataSource_Private.h in Headers */,
 				F4DC01C71AC6FFE50013C331 /* AAPLStateMachine.h in Headers */,
-				F4DC01D91AC700210013C331 /* P9ASTableViewController.h in Headers */,
+				F4DC01DD1AC708B60013C331 /* P9ASTableViewController.h in Headers */,
 				F4DC01A71AC6FC090013C331 /* AdvancedMVCForAsyncDisplayKit.h in Headers */,
 				F4DC01C51AC6FFE50013C331 /* AAPLContentLoading.h in Headers */,
 				F4DC01D51AC700170013C331 /* P9SegmentedDataSource.h in Headers */,
@@ -350,7 +350,7 @@
 				F4DC01C61AC6FFE50013C331 /* AAPLContentLoading.m in Sources */,
 				F4DC01D41AC700170013C331 /* P9DataSource.m in Sources */,
 				F4DC01D11AC700170013C331 /* P9BasicDataSource.m in Sources */,
-				F4DC01DA1AC700210013C331 /* P9ASTableViewController.m in Sources */,
+				F4DC01DE1AC708B60013C331 /* P9ASTableViewController.m in Sources */,
 				F4DC01C81AC6FFE50013C331 /* AAPLStateMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
