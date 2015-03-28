@@ -20,6 +20,10 @@
 		F4C835B71ABD1B7100CAE09B /* P9SegmentedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */; };
 		F4C835BC1ABFB90900CAE09B /* P9ASTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C835BA1ABFB90900CAE09B /* P9ASTableViewController.h */; };
 		F4C835BD1ABFB90900CAE09B /* P9ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C835BB1ABFB90900CAE09B /* P9ASTableViewController.m */; };
+		F4DC01911AC6F7B10013C331 /* AAPLStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DC018F1AC6F7B10013C331 /* AAPLStateMachine.h */; };
+		F4DC01921AC6F7B10013C331 /* AAPLStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC01901AC6F7B10013C331 /* AAPLStateMachine.m */; };
+		F4DC01951AC6FA6D0013C331 /* AAPLContentLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DC01931AC6FA6D0013C331 /* AAPLContentLoading.h */; };
+		F4DC01961AC6FA6D0013C331 /* AAPLContentLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC01941AC6FA6D0013C331 /* AAPLContentLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		F4C835AF1ABD1B7100CAE09B /* P9SegmentedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9SegmentedDataSource.m; sourceTree = "<group>"; };
 		F4C835BA1ABFB90900CAE09B /* P9ASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P9ASTableViewController.h; sourceTree = "<group>"; };
 		F4C835BB1ABFB90900CAE09B /* P9ASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P9ASTableViewController.m; sourceTree = "<group>"; };
+		F4DC018F1AC6F7B10013C331 /* AAPLStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLStateMachine.h; sourceTree = "<group>"; };
+		F4DC01901AC6F7B10013C331 /* AAPLStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLStateMachine.m; sourceTree = "<group>"; };
+		F4DC01931AC6FA6D0013C331 /* AAPLContentLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLContentLoading.h; sourceTree = "<group>"; };
+		F4DC01941AC6FA6D0013C331 /* AAPLContentLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLContentLoading.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C8358E1ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit */,
+				F4DC018D1AC6F7B10013C331 /* vendor */,
 				F4C8359B1ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKitTests */,
 				F4C8358D1ABD1B4900CAE09B /* Products */,
 				7BF00D06B366488573E9BEBB /* Pods */,
@@ -169,6 +178,25 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		F4DC018D1AC6F7B10013C331 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC018E1AC6F7B10013C331 /* Apple */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		F4DC018E1AC6F7B10013C331 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				F4DC018F1AC6F7B10013C331 /* AAPLStateMachine.h */,
+				F4DC01901AC6F7B10013C331 /* AAPLStateMachine.m */,
+				F4DC01931AC6FA6D0013C331 /* AAPLContentLoading.h */,
+				F4DC01941AC6FA6D0013C331 /* AAPLContentLoading.m */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -177,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C835B31ABD1B7100CAE09B /* P9DataSource.h in Headers */,
+				F4DC01951AC6FA6D0013C331 /* AAPLContentLoading.h in Headers */,
+				F4DC01911AC6F7B10013C331 /* AAPLStateMachine.h in Headers */,
 				F4C835B21ABD1B7100CAE09B /* P9DataSource_Private.h in Headers */,
 				F4C835B61ABD1B7100CAE09B /* P9SegmentedDataSource.h in Headers */,
 				F4C835921ABD1B4900CAE09B /* P9DataSourcesForAsyncDisplayKit.h in Headers */,
@@ -318,6 +348,8 @@
 			files = (
 				F4C835B71ABD1B7100CAE09B /* P9SegmentedDataSource.m in Sources */,
 				F4C835B11ABD1B7100CAE09B /* P9BasicDataSource.m in Sources */,
+				F4DC01961AC6FA6D0013C331 /* AAPLContentLoading.m in Sources */,
+				F4DC01921AC6F7B10013C331 /* AAPLStateMachine.m in Sources */,
 				F4C835BD1ABFB90900CAE09B /* P9ASTableViewController.m in Sources */,
 				F4C835B41ABD1B7100CAE09B /* P9DataSource.m in Sources */,
 			);

@@ -11,10 +11,12 @@ Pod::Spec.new do |spec|
 
   spec.public_header_files = [
       'P9DataSourcesForAsyncDisplayKit/*.h',
+      'vendor/**/*.h',
   ]
 
   spec.source_files = [
-      'P9DataSourcesForAsyncDisplayKit/**/*.{h,m,mm}'
+      'P9DataSourcesForAsyncDisplayKit/**/*.{h,m,mm}',
+      'vendor/**/*.{h,m,mm}'
   ]
 
   spec.ios.deployment_target = '7.0'
