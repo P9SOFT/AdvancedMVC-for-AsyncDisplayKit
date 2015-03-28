@@ -86,20 +86,42 @@ static NSString * const asyncDataSource = @"asyncDataSource";
 
 
 
-#pragma mark - P9DataSource methods
+#pragma mark - P9DataSourceDelegate methods
 
 - (void)dataSource:(P9DataSource *)dataSource didRefreshSections:(NSIndexSet *)sections
 {
     if (!sections)
         return;
 
-    [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationNone];
+    //[self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView reloadData]; // temporary test code!!!
 }
 
 - (void)dataSourceDidReloadData:(P9DataSource *)dataSource
 {
     [self.tableView reloadData];
 }
+
+- (void)dataSource:(P9DataSource *)dataSource performBatchUpdate:(dispatch_block_t)update complete:(dispatch_block_t)complete
+{
+    /*
+    [self.tableView performBatchUpdates:^{
+        update();
+    } completion:^(BOOL finished){
+        if (complete) {
+            complete();
+        }
+        [self.tableView reloadData];
+    }];
+     */
+
+    if (complete) {
+        complete();
+    }
+
+    [self.tableView reloadData];
+}
+
 
 
 @end

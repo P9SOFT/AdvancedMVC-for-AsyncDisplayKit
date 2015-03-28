@@ -15,9 +15,24 @@
 @property (nonatomic, readonly) NSInteger numberOfSections;
 
 
+/// Find the data source for the given section. Default implementation returns self.
+- (P9DataSource *)dataSourceForSectionAtIndex:(NSInteger)sectionIndex;
 
+/// Find the item at the specified index path.
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath;
+
+/// Find the index paths of the specified item in the data source. An item may appear more than once in a given data source.
+- (NSArray*)indexPathsForItem:(id)item;
+
+- (void)notifySectionsInserted:(NSIndexSet *)sections;
+- (void)notifySectionsRemoved:(NSIndexSet *)sections;
 - (void)notifySectionsRefreshed:(NSIndexSet *)sections;
+
 - (void)notifyDidReloadData;
+
+- (void)notifyBatchUpdate:(dispatch_block_t)update;
+- (void)notifyBatchUpdate:(dispatch_block_t)update complete:(dispatch_block_t)complete;
+
 
 
 #pragma mark - Placeholders

@@ -16,9 +16,56 @@
 
 @implementation P9DataSource
 
+- (P9DataSource *)dataSourceForSectionAtIndex:(NSInteger)sectionIndex
+{
+    return self;
+}
+
 - (NSInteger)numberOfSections
 {
     return 1;
+}
+
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSAssert(NO, @"Should be implemented by subclasses");
+    return nil;
+}
+
+- (NSArray *)indexPathsForItem:(id)object
+{
+    NSAssert(NO, @"Should be implemented by subclasses");
+    return nil;
+}
+
+- (void)notifySectionsInserted:(NSIndexSet *)sections
+{
+    [self notifySectionsInserted:sections direction:P9DataSourceSectionOperationDirectionNone];
+}
+
+- (void)notifySectionsInserted:(NSIndexSet *)sections direction:(P9DataSourceSectionOperationDirection)direction
+{
+    P9_ASSERT_MAIN_THREAD;
+    
+    id<P9DataSourceDelegate> delegate = self.delegate;
+    if ([delegate respondsToSelector:@selector(dataSource:didInsertSections:direction:)]) {
+        [delegate dataSource:self didInsertSections:sections direction:direction];
+    }
+}
+
+- (void)notifySectionsRemoved:(NSIndexSet *)sections
+{
+    [self notifySectionsRemoved:sections direction:P9DataSourceSectionOperationDirectionNone];
+}
+
+- (void)notifySectionsRemoved:(NSIndexSet *)sections direction:(P9DataSourceSectionOperationDirection)direction
+{
+    P9_ASSERT_MAIN_THREAD;
+    
+    id<P9DataSourceDelegate> delegate = self.delegate;
+    if ([delegate respondsToSelector:@selector(dataSource:didRemoveSections:direction:)]) {
+        [delegate dataSource:self didRemoveSections:sections direction:direction];
+    }
 }
 
 - (void)notifySectionsRefreshed:(NSIndexSet *)sections
@@ -38,6 +85,29 @@
     id<P9DataSourceDelegate> delegate = self.delegate;
     if ([delegate respondsToSelector:@selector(dataSourceDidReloadData:)]) {
         [delegate dataSourceDidReloadData:self];
+    }
+}
+
+- (void)notifyBatchUpdate:(dispatch_block_t)update
+{
+    [self notifyBatchUpdate:update complete:nil];
+}
+
+- (void)notifyBatchUpdate:(dispatch_block_t)update complete:(dispatch_block_t)complete
+{
+    P9_ASSERT_MAIN_THREAD;
+    
+    id<P9DataSourceDelegate> delegate = self.delegate;
+    if ([delegate respondsToSelector:@selector(dataSource:performBatchUpdate:complete:)]) {
+        [delegate dataSource:self performBatchUpdate:update complete:complete];
+    }
+    else {
+        if (update) {
+            update();
+        }
+        if (complete) {
+            complete();
+        }
     }
 }
 

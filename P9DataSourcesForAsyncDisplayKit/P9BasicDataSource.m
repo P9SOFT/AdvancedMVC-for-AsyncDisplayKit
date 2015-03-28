@@ -18,6 +18,25 @@
     self.items = @[];
 }
 
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSUInteger itemIndex = indexPath.item;
+    if (itemIndex < [_items count])
+        return _items[itemIndex];
+    
+    return nil;
+}
+
+- (NSArray *)indexPathsForItem:(id)item
+{
+    NSMutableArray *indexPaths = [NSMutableArray array];
+    [_items enumerateObjectsUsingBlock:^(id obj, NSUInteger objectIndex, BOOL *stop) {
+        if ([obj isEqual:item])
+            [indexPaths addObject:[NSIndexPath indexPathForItem:objectIndex inSection:0]];
+    }];
+    return indexPaths;
+}
+
 -(void) setItems:(NSArray *)items
 {
     if (_items == items || [_items isEqualToArray:items])
@@ -28,9 +47,15 @@
 }
 
 
+
 #pragma mark - ASTableViewDataSource methods
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [_items count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [_items count];
 }
