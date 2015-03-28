@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4C8358B1ABD1B4900CAE09B"
-               BuildableName = "P9DataSourcesForAsyncDisplayKit.framework"
-               BlueprintName = "P9DataSourcesForAsyncDisplayKit"
-               ReferencedContainer = "container:P9DataSourcesForAsyncDisplayKit.xcodeproj">
+               BlueprintIdentifier = "F4DC01A01AC6FC090013C331"
+               BuildableName = "AdvancedMVCForAsyncDisplayKit.framework"
+               BlueprintName = "AdvancedMVCForAsyncDisplayKit"
+               ReferencedContainer = "container:AdvancedMVCForAsyncDisplayKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4C835961ABD1B4900CAE09B"
-               BuildableName = "P9DataSourcesForAsyncDisplayKitTests.xctest"
-               BlueprintName = "P9DataSourcesForAsyncDisplayKitTests"
-               ReferencedContainer = "container:P9DataSourcesForAsyncDisplayKit.xcodeproj">
+               BlueprintIdentifier = "F4DC01AB1AC6FC090013C331"
+               BuildableName = "AdvancedMVCForAsyncDisplayKitTests.xctest"
+               BlueprintName = "AdvancedMVCForAsyncDisplayKitTests"
+               ReferencedContainer = "container:AdvancedMVCForAsyncDisplayKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4C835961ABD1B4900CAE09B"
-               BuildableName = "P9DataSourcesForAsyncDisplayKitTests.xctest"
-               BlueprintName = "P9DataSourcesForAsyncDisplayKitTests"
-               ReferencedContainer = "container:P9DataSourcesForAsyncDisplayKit.xcodeproj">
+               BlueprintIdentifier = "F4DC01AB1AC6FC090013C331"
+               BuildableName = "AdvancedMVCForAsyncDisplayKitTests.xctest"
+               BlueprintName = "AdvancedMVCForAsyncDisplayKitTests"
+               ReferencedContainer = "container:AdvancedMVCForAsyncDisplayKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F4C8358B1ABD1B4900CAE09B"
-            BuildableName = "P9DataSourcesForAsyncDisplayKit.framework"
-            BlueprintName = "P9DataSourcesForAsyncDisplayKit"
-            ReferencedContainer = "container:P9DataSourcesForAsyncDisplayKit.xcodeproj">
+            BlueprintIdentifier = "F4DC01A01AC6FC090013C331"
+            BuildableName = "AdvancedMVCForAsyncDisplayKit.framework"
+            BlueprintName = "AdvancedMVCForAsyncDisplayKit"
+            ReferencedContainer = "container:AdvancedMVCForAsyncDisplayKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F4C8358B1ABD1B4900CAE09B"
-            BuildableName = "P9DataSourcesForAsyncDisplayKit.framework"
-            BlueprintName = "P9DataSourcesForAsyncDisplayKit"
-            ReferencedContainer = "container:P9DataSourcesForAsyncDisplayKit.xcodeproj">
+            BlueprintIdentifier = "F4DC01A01AC6FC090013C331"
+            BuildableName = "AdvancedMVCForAsyncDisplayKit.framework"
+            BlueprintName = "AdvancedMVCForAsyncDisplayKit"
+            ReferencedContainer = "container:AdvancedMVCForAsyncDisplayKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F4C8358B1ABD1B4900CAE09B"
-            BuildableName = "P9DataSourcesForAsyncDisplayKit.framework"
-            BlueprintName = "P9DataSourcesForAsyncDisplayKit"
-            ReferencedContainer = "container:P9DataSourcesForAsyncDisplayKit.xcodeproj">
+            BlueprintIdentifier = "F4DC01A01AC6FC090013C331"
+            BuildableName = "AdvancedMVCForAsyncDisplayKit.framework"
+            BlueprintName = "AdvancedMVCForAsyncDisplayKit"
+            ReferencedContainer = "container:AdvancedMVCForAsyncDisplayKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

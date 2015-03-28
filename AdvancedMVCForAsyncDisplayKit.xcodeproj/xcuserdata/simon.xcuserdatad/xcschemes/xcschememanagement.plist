@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>P9DataSourcesForAsyncDisplayKit.xcscheme</key>
+		<key>AdvancedMVCForAsyncDisplayKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F4C8358B1ABD1B4900CAE09B</key>
+		<key>F4DC01A01AC6FC090013C331</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4C835961ABD1B4900CAE09B</key>
+		<key>F4DC01AB1AC6FC090013C331</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,20 +1,19 @@
 //
-//  P9DataSourcesForAsyncDisplayKitTests.m
-//  P9DataSourcesForAsyncDisplayKitTests
+//  AdvancedMVCForAsyncDisplayKitTests.m
+//  AdvancedMVCForAsyncDisplayKitTests
 //
-//  Created by Simon Kim on 3/20/15.
+//  Created by Simon on 3/28/15.
 //  Copyright (c) 2015 P9 SOFT, Inc. All rights reserved.
 //
-//  Licensed under the MIT license.
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface P9DataSourcesForAsyncDisplayKitTests : XCTestCase
+@interface AdvancedMVCForAsyncDisplayKitTests : XCTestCase
 
 @end
 
-@implementation P9DataSourcesForAsyncDisplayKitTests
+@implementation AdvancedMVCForAsyncDisplayKitTests
 
 - (void)setUp {
     [super setUp];

@@ -1,6 +1,6 @@
 //
 //  P9ASTableViewController.m
-//  P9DataSourcesForAsyncDisplayKit
+//  AdvancedMVCForAsyncDisplayKit
 //
 //  Created by Simon Kim on 3/22/15.
 //  Copyright (c) 2015 P9 SOFT, Inc. All rights reserved.
